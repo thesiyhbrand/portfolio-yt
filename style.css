@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #000;
+}
+
+.nav{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 10vw;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.8vw;
+    font-family: 'Cinzel Decorative';
+}
+
+.hire-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7vw;
+    height: 2vw;
+    border-radius: 50px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+
+.hire-btn:hover{
+    color: #000;
+    background-color: #ffffff;
+}
+
+.part-1{
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.img-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cir{
+    width: 30vw;
+    height: 30vw;
+    border: 3vw solid #d4c1aa;
+    border-radius: 50%;
+    filter: blur(2px);
+    box-shadow: 0px 0px 100px 2px #ffffff3e;
+    position: absolute;
+    top: 20%; 
+    animation: circle 3s linear infinite alternate;
+}
+
+@keyframes circle {
+    0%{
+        box-shadow: 0px 0px 100px 2px #fd362831;
+    }
+    100%{
+        box-shadow: 0px 0px 200px 15px #FD3628;
+    }
+}
+
+.img-content img{
+    width: 35vw;
+    z-index: 99;
+}
+
+.part-1-content{
+    position: absolute;
+    bottom: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    /* z-index: 99; */
+}
+
+.part-1-content h1{
+    font-size: 8vw;
+    color: #D4C1AA;
+    /* color: #FD3628; */
+    font-family: 'Cinzel Decorative';
+    font-weight: 900;
+    mix-blend-mode: difference;
+    z-index: 99;
+}
+
+.part-1-content p{
+    color: #fff;
+    z-index: 99;
+    font-size: 2vw;
+    font-family: 'Libre Barcode 128 Text';
+}
+
+.float-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    gap: 2vw;
+    color: #fff;
+    font-family: 'Libre Barcode 128 Text';
+    font-size: 1.5vw;
+}
+
+.float-content i{
+    font-size: 1vw;
+    font-family: 'Cinzel Decorative';
+}
